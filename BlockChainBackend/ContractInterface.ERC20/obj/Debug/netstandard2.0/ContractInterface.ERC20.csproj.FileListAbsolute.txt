@@ -1,0 +1,12 @@
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.ERC20.deps.json
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.ERC20.dll
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.ERC20.pdb
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.Common.dll
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.Common.pdb
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.csprojAssemblyReference.cache
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.csproj.CoreCompileInputs.cache
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.AssemblyInfoInputs.cache
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.AssemblyInfo.cs
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.csproj.CopyComplete
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.dll
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.pdb

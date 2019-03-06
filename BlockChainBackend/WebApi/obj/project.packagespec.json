@@ -1,0 +1,65 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/BlockChainBackend.csproj",
+    "projectName": "BlockChainBackend",
+    "projectPath": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/BlockChainBackend.csproj",
+    "outputPath": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {
+          "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/ContractInterface.Common.csproj": {
+            "projectPath": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/ContractInterface.Common.csproj"
+          },
+          "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/ContractInterface.ERC20.csproj": {
+            "projectPath": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/ContractInterface.ERC20.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "Microsoft.AspNetCore.Razor.Design": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        },
+        "Nethereum.Web3": {
+          "target": "Package",
+          "version": "[3.0.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

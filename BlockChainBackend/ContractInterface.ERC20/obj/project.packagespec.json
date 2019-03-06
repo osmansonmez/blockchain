@@ -1,0 +1,55 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/ContractInterface.ERC20.csproj",
+    "projectName": "ContractInterface.ERC20",
+    "projectPath": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/ContractInterface.ERC20.csproj",
+    "outputPath": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.ERC20/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard2.0"
+    ],
+    "frameworks": {
+      "netstandard2.0": {
+        "projectReferences": {
+          "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/ContractInterface.Common.csproj": {
+            "projectPath": "/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/ContractInterface.Common.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netstandard2.0": {
+      "dependencies": {
+        "Microsoft.Extensions.Configuration": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.3, )",
+          "autoReferenced": true
+        },
+        "Nethereum.Web3": {
+          "target": "Package",
+          "version": "[3.0.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

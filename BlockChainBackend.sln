@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockChainBackend", "BlockChainBackend\WebApi\BlockChainBackend.csproj", "{0F9CAFF7-063F-404A-89B4-2FB5B147AF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractInterface.Common", "BlockChainBackend\ContractInterface.Common\ContractInterface.Common.csproj", "{1960D336-0B4A-4D5F-B949-49EE7C1B2057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractInterface.ERC20", "BlockChainBackend\ContractInterface.ERC20\ContractInterface.ERC20.csproj", "{0AC75EAA-A471-43C6-A6A7-8FFB052BD7CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F9CAFF7-063F-404A-89B4-2FB5B147AF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9CAFF7-063F-404A-89B4-2FB5B147AF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9CAFF7-063F-404A-89B4-2FB5B147AF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9CAFF7-063F-404A-89B4-2FB5B147AF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1960D336-0B4A-4D5F-B949-49EE7C1B2057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1960D336-0B4A-4D5F-B949-49EE7C1B2057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1960D336-0B4A-4D5F-B949-49EE7C1B2057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1960D336-0B4A-4D5F-B949-49EE7C1B2057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC75EAA-A471-43C6-A6A7-8FFB052BD7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC75EAA-A471-43C6-A6A7-8FFB052BD7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC75EAA-A471-43C6-A6A7-8FFB052BD7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC75EAA-A471-43C6-A6A7-8FFB052BD7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

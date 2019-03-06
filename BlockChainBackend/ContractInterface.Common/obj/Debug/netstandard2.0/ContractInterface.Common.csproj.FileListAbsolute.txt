@@ -1,0 +1,9 @@
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/bin/Debug/netstandard2.0/ContractInterface.Common.deps.json
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/bin/Debug/netstandard2.0/ContractInterface.Common.dll
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/bin/Debug/netstandard2.0/ContractInterface.Common.pdb
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.csprojAssemblyReference.cache
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.csproj.CoreCompileInputs.cache
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.AssemblyInfoInputs.cache
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.AssemblyInfo.cs
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.dll
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.pdb
