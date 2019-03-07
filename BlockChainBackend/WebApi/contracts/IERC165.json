@@ -277,7 +277,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-02-27T10:26:09.671Z",
+  "updatedAt": "2019-03-06T08:05:02.667Z",
   "devdoc": {
     "details": "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-165.md",
     "methods": {

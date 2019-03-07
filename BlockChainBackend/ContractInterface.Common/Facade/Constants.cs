@@ -17,7 +17,7 @@ namespace ContractInterface.Common
 
         #region Directories
         public static string CONTRACTS_DIR_NAME = "SmartContracts";
-        public static string CONTRACT_ARTIFACTS_DIR_NAME = "Contracts";
+        public static string CONTRACT_ARTIFACTS_DIR_NAME = "contracts";
         public static string CONTRACT_ARTIFACT_FILE_NAME = "ContractArtifacts";
         #endregion
     

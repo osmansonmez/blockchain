@@ -1,3 +1,7 @@
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/Address.json
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/AkTL.json
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/PostdatedCheckManager.json
+/Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/Wallet.json
 /Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.deps.json
 /Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.runtimeconfig.json
 /Users/osmansonmez/RiderProjects/BlockChainBackend/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.runtimeconfig.dev.json
