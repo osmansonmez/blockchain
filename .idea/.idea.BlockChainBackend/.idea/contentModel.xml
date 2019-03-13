@@ -96,7 +96,50 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="src" t="Include">
-          <e p="BankController.cs" t="Include" />
+          <e p="Controllers" t="Include">
+            <e p="BankController.cs" t="Include" />
+            <e p="CustomerController.cs" t="Include" />
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="TimeHelper.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="AccountModel.cs" t="Include" />
+            <e p="Bank" t="Include">
+              <e p="AddCustomerToCheckAccountRequest.cs" t="Include" />
+              <e p="AddCustomerToCheckAccountResponse.cs" t="Include" />
+              <e p="AddCustomerToWalletRequestModel.cs" t="Include" />
+              <e p="AddCustomerToWalletResponseModel.cs" t="Include" />
+              <e p="IsCustomerHasCheckAccountRequest.cs" t="Include" />
+              <e p="IsCustomerHasCheckAccountResponse.cs" t="Include" />
+              <e p="QueryCustomerAdressRequestModel.cs" t="Include" />
+              <e p="QueryCustomerAdressResponseModel.cs" t="Include" />
+            </e>
+            <e p="BaseModel.cs" t="Include" />
+            <e p="BlockChainModels" t="Include">
+              <e p="AkTLModels.cs" t="Include" />
+              <e p="CheckModels.cs" t="Include" />
+              <e p="WalletModels.cs" t="Include" />
+            </e>
+            <e p="Customer" t="Include">
+              <e p="Check.cs" t="Include" />
+              <e p="CheckInfoRequest.cs" t="Include" />
+              <e p="CheckInfoResponse.cs" t="Include" />
+              <e p="CheckListRequest.cs" t="Include" />
+              <e p="CheckListResponse.cs" t="Include" />
+              <e p="CreateCheckRequest.cs" t="Include" />
+              <e p="CreateCheckResponse.cs" t="Include" />
+            </e>
+            <e p="Session.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="CheckService.cs" t="Include" />
+            <e p="ICheckService.cs" t="Include" />
+            <e p="IWalletService.cs" t="Include" />
+            <e p="IWeb3Backend.cs" t="Include" />
+            <e p="WalletService.cs" t="Include" />
+            <e p="Web3Backend.cs" t="Include" />
+          </e>
         </e>
         <e p="Startup.cs" t="Include" />
       </e>

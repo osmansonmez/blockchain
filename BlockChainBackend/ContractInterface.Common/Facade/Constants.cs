@@ -7,10 +7,11 @@ namespace ContractInterface.Common
         public static string GETH_RPC = "GethRPC";
 
         #region Defautl values for contracts
-        public static string DEFAULT_TEST_ACCOUNT_ADDRESS = "0x3C919D9570D5e5a724FEBc6Ed8662E42Aeb94428";
+
+        public static string DEFAULT_TEST_ACCOUNT_ADDRESS = "0x791e65CD37dA61786F3944CA42e1Cc4bC882241e";//"0x3a8b73a6A99eF3696596419bEc74915Da6a53db9";
         public static string DEFAULT_TEST_ACCOUNT_PASSWORD = "";
-        public static string BALLOT_TOKEN_CONTRACT_NAME = "Ballot";
-        public static BigInteger DEFAULT_GAS = 3000000;
+        public static BigInteger DEFAULT_GAS = 4500000;
+        public static BigInteger DEFAULT_GAS_PRICE = 150;
         public static BigInteger DEFAULT_VALUE = 0;
 
         #endregion

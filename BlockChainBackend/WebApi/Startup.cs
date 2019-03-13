@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlockChainBackend.Services;
 using ContractInterface.Common;
 using ContractInterface.ERC20;
 using Microsoft.AspNetCore.Builder;
@@ -22,6 +23,10 @@ namespace BlockChainBackend
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IContractFacade, ContractFacade>();
+            services.AddSingleton<IContractOperation, ContractOperation>();
+            services.AddScoped<IWalletService, WalletService>();
+            services.AddScoped<ICheckService, CheckService>();
+            services.AddScoped<IWeb3Backend, Web3Backend>();
             services.AddSingleton<IContractOperation, ContractOperation>();
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -53,6 +58,10 @@ namespace BlockChainBackend
             });
             
             app.UseMvc();
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Ayağa Kalktı!");
+            });
         }
     }
 }

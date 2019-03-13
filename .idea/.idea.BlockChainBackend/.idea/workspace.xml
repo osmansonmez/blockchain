@@ -24,14 +24,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3959bb9-3627-4aec-99a9-5ce146fd8fbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BlockChainBackend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Wallet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Helpers/TimeHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/AccountModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckAccountRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckAccountResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToWalletRequestModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToWalletResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/IsCustomerHasCheckAccountRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/IsCustomerHasCheckAccountResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/QueryCustomerAdressRequestModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/QueryCustomerAdressResponseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BaseModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/CheckModels.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/WalletModels.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/Check.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckListRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckListResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CreateCheckRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CreateCheckResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Session.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/ICheckService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWalletService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWeb3Backend.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/WalletService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/Web3Backend.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlockChainBackend/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlockChainBackend/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlockChainBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlockChainBackend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/Constants.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Cache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Cache.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/IContractFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/IContractFacade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/bin/Debug/netstandard2.0/ContractInterface.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/bin/Debug/netstandard2.0/ContractInterface.Common.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/bin/Debug/netstandard2.0/ContractInterface.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/bin/Debug/netstandard2.0/ContractInterface.Common.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/obj/Debug/netstandard2.0/ContractInterface.Common.csprojAssemblyReference.cache" afterDir="false" />
@@ -40,14 +64,17 @@
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.Common.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/bin/Debug/netstandard2.0/ContractInterface.Common.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/BlockChainBackend.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/BlockChainBackend.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/BlockChainBackend.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/ContractInterface.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/ContractInterface.Common.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/ContractInterface.Common.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/ContractInterface.Common.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/Address.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/Address.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/AkTL.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/AkTL.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/PostdatedCheckManager.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/PostdatedCheckManager.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/Wallet.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/bin/Debug/netcoreapp2.2/contracts/Wallet.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Address.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Address.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/AkTL.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/AkTL.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/ERC165.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/ERC165.json" afterDir="false" />
@@ -72,18 +99,12 @@
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Roles.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Roles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/SafeMath.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/SafeMath.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/TransactionPermissionManager.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/TransactionPermissionManager.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/BlockChainBackend.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/BlockChainBackend.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/BlockChainBackend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/BlockChainBackend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/BlockChainBackend.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/BlockChainBackend.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Wallet.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Wallet.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/Debug/netcoreapp2.2/BlockChainBackend.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChainBackend/WebApi/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,41 +116,43 @@
     <session id="1011988900">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="3" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="59" />
+          <entry key="cs" value="190" />
           <entry key="csproj" value="1" />
-          <entry key="json" value="16" />
+          <entry key="json" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="59" />
+          <entry key="C#" value="190" />
           <entry key="Csproj" value="1" />
-          <entry key="JSON" value="16" />
+          <entry key="JSON" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2014" />
+          <entry key="cs" value="9126" />
           <entry key="csproj" value="4" />
-          <entry key="json" value="23" />
+          <entry key="json" value="43" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2014" />
+          <entry key="C#" value="9126" />
           <entry key="Csproj" value="4" />
-          <entry key="JSON" value="23" />
+          <entry key="JSON" value="43" />
+          <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -137,166 +160,198 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="78" column="30" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="30" />
+            <state relative-caret-position="138">
+              <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
               <folding>
-                <marker date="1551950360815" expanded="false" signature="6:562" ph="..." />
-                <marker date="1551950360815" expanded="true" signature="598:5428" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="710:5426" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="1055:1296" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="1460:1680" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="1805:1927" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="2028:2140" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="2242:2853" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="2474:2607" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="2936:4490" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="3182:3702" ph="/* AddToWalletFunction func = new AddToWalletFunction() ... */" />
-                <marker date="1551950360815" expanded="true" signature="4566:5094" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="4757:5051" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="5146:5286" ph="{...}" />
-                <marker date="1551950360815" expanded="true" signature="5325:5420" ph="{...}" />
+                <marker date="1552482765442" expanded="false" signature="6:756" ph="..." />
+                <marker date="1552482765442" expanded="true" signature="792:3897" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="904:3895" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="1277:1450" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="1572:2023" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="1738:1889" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2154:3216" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2354:2753" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2444:2611" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2930:3081" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="3345:3536" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="3673:3889" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/cf/73a78c36/FunctionBuilderBase.cs">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97299347-DDC8-4F44-82AD-004BD579DFA5/b5/a5b9d328/FunctionCallDecoder.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="85" column="40" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/IContractOperation.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="257">
+              <caret line="236" column="12" selection-start-line="236" selection-start-column="12" selection-end-line="236" selection-end-column="12" />
               <folding>
-                <marker date="1551766240833" expanded="false" signature="6:184" ph="..." />
-                <marker date="1551766240833" expanded="true" signature="219:1654" ph="{...}" />
-                <marker date="1551766240833" expanded="true" signature="261:1652" ph="{...}" />
+                <marker date="1552482765449" expanded="false" signature="6:688" ph="..." />
+                <marker date="1552482765449" expanded="true" signature="726:10299" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="774:10297" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="1298:1505" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="1574:3063" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="1686:1743" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="2056:2171" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="2493:2590" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="2875:2955" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="2972:3053" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="3132:4280" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="3454:3512" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="3832:3929" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="4396:5394" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="4862:5046" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="5491:6154" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="6259:7107" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="6721:6813" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="7192:8704" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="7668:7765" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="8156:8664" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="8277:8650" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="8361:8630" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="8786:10291" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="9258:9354" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="9744:10252" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="9865:10238" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="9949:10218" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/WalletService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+              <folding>
+                <marker date="1552482765450" expanded="true" signature="6:612" ph="..." />
+                <marker date="1552482765450" expanded="true" signature="650:4063" ph="{...}" />
+                <marker date="1552482765450" expanded="true" signature="700:4061" ph="{...}" />
+                <marker date="1552482765450" expanded="true" signature="1150:1313" ph="{...}" />
+                <marker date="1552482765450" expanded="true" signature="1383:2288" ph="{...}" />
+                <marker date="1552482765450" expanded="true" signature="1772:1876" ph="{...}" />
+                <marker date="1552482765450" expanded="true" signature="2369:4055" ph="{...}" />
+                <marker date="1552482765450" expanded="true" signature="2731:2971" ph="/* var ecKey = Nethereum.Signer.EthECKey.GenerateKey(); ... */" />
+                <marker date="1552482765450" expanded="true" signature="3060:3305" ph="{...}" />
+                <marker date="1552482765450" expanded="true" signature="3616:3990" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+              <folding>
+                <marker date="1552482765442" expanded="false" signature="6:293" ph="..." />
+                <marker date="1552482765442" expanded="true" signature="329:4380" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="445:4378" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="831:1004" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="1105:1578" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="1694:2592" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="1910:2525" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2178:2510" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2240:2492" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2689:3490" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="2905:3423" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="3076:3408" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="3138:3390" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="3600:3929" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="4045:4372" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/CheckModels.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+              <folding>
+                <marker date="1552482765445" expanded="false" signature="6:146" ph="..." />
+                <marker date="1552482765445" expanded="true" signature="195:3582" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="226:3580" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="241:340" ph="/// Müşteriyi Check contcrat'a eklemek için kullanılır ... " />
+                <marker date="1552482765445" expanded="true" signature="438:544" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="554:657" ph="/// Müşteriyi check müşterisi mi bilgisinin input requesti ... " />
+                <marker date="1552482765445" expanded="true" signature="761:867" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="877:980" ph="/// Müşteriyi check müşterisi mi bilgisinin input requesti ... " />
+                <marker date="1552482765445" expanded="true" signature="1069:1167" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="1177:1246" ph="/// Create Check Request ... " />
+                <marker date="1552482765445" expanded="true" signature="1344:1602" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="1684:1906" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="1916:1982" ph="/// CheckInfo Request ... " />
+                <marker date="1552482765445" expanded="true" signature="2076:2179" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="2189:2254" ph="/// CheckInfo Output ... " />
+                <marker date="1552482765445" expanded="true" signature="2342:2707" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="2725:2791" ph="/// CheckInfo Request ... " />
+                <marker date="1552482765445" expanded="true" signature="2894:2997" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="3015:3081" ph="/// CheckInfo Request ... " />
+                <marker date="1552482765445" expanded="true" signature="3189:3295" ph="{...}" />
+                <marker date="1552482765445" expanded="true" signature="3305:3370" ph="/// CheckInfo Output ... " />
+                <marker date="1552482765445" expanded="true" signature="3458:3574" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Contract_Transaction.cs">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Helpers/TimeHelper.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="93" column="63" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="63" />
+            <state relative-caret-position="180">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding>
-                <marker date="1551766240838" expanded="true" signature="6:320" ph="..." />
-                <marker date="1551766240838" expanded="true" signature="355:4514" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="420:4512" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="436:2143" ph="Write" />
-                <marker date="1551766240838" expanded="true" signature="692:869" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="1013:1170" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="1292:1479" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="1607:1798" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="1929:2123" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="2154:3847" ph="Read" />
-                <marker date="1551766240838" expanded="true" signature="2285:2488" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="2567:2744" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="2833:3021" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="3109:3296" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="3407:3610" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="3673:3827" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="4002:4505" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="4121:4309" ph="{...}" />
-                <marker date="1551766240838" expanded="true" signature="4375:4426" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="50:849" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="87:847" ph="{...}" />
+                <marker date="1552482765442" expanded="true" signature="552:841" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2E8041D-194E-48B1-87BB-3A6D603A9DF8/71/65e24d31/Function.cs">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/317e441d/Event`1.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+            <state relative-caret-position="173">
+              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Deployment.cs">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/66/21bf85ef/String.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="119" column="57" selection-start-line="119" selection-start-column="57" selection-end-line="119" selection-end-column="57" />
+            <state relative-caret-position="-76">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/ICheckService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="40" />
               <folding>
-                <marker date="1551766240602" expanded="false" signature="6:718" ph="..." />
-                <marker date="1551766240602" expanded="true" signature="754:7420" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="813:7418" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="830:1346" ph="/// Deploy smart contract, other than contract's abi, bytecode, sender address, ... " />
-                <marker date="1551766240602" expanded="true" signature="1578:4201" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="1604:1852" ph="/* var isNameUnique = CheckUniqueContractName(name); ... */" />
-                <marker date="1551766240602" expanded="true" signature="2105:2318" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="2350:2551" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="2705:2803" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="2835:2944" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="3093:3386" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="3817:4190" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="4297:5117" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="4451:5041" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="4485:4745" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="4784:5027" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="4849:5009" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="5199:6556" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="5267:6370" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="5449:5597" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="6403:6533" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="6614:7100" ph="{...}" />
-                <marker date="1551766240602" expanded="true" signature="7141:7403" ph="{...}" />
+                <marker date="1552482765449" expanded="false" signature="6:163" ph="..." />
+                <marker date="1552482765449" expanded="true" signature="201:789" ph="{...}" />
+                <marker date="1552482765449" expanded="true" signature="238:787" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Helpers/OperationResults/TransactionResult.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-              <folding>
-                <marker date="1551766240622" expanded="false" signature="6:132" ph="..." />
-                <marker date="1551766240622" expanded="true" signature="176:1381" ph="{...}" />
-                <marker date="1551766240622" expanded="true" signature="213:1379" ph="{...}" />
-                <marker date="1551766240622" expanded="true" signature="715:736" ph="{...}" />
-                <marker date="1551766240622" expanded="true" signature="797:1373" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/1d/a7705885/QueryRawHandler`1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/d3/d0167a5d/ContractQueryHandlerBase`1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -309,48 +364,107 @@
       <find>networks</find>
       <find>netwo</find>
       <find>network</find>
+      <find>AddCustomerToWalletRequestModel</find>
+      <find>.Status</find>
+      <find>net</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/f7/ee7e7052/ControllerFactoryProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/63/1aa44911/IFunctionOutputDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/14/80a2be29/PersonalNewAccount.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWalletService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/4d/b372591e/PersonalApiService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/14d5ba88/IContractQueryHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/0a/15722eec/IContractTransactionHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Helpers/TimeHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/e9/e88af2e1/PersonalListAccounts.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Contract_Init.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/IContractOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/IsCustomerHasCheckAccountResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/63/fa52377d/GenericRpcRequestResponseHandlerNoParam`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Contract_Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/IsCustomerHasCheckAccountRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToWalletResponseModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7567EDEF-A683-479A-A950-55D698AEC5A8/a5/0b7e2569/HexByteConvertorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/5a/8036aade/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/AccountModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/QueryCustomerAdressResponseModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWeb3Backend.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/c3/14eb1152/FunctionBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/Web3Backend.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE51ADA2-4203-4622-805F-C049BD5DD252/6e/5c2252c4/RangeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/06/3b8958bf/Task`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE51ADA2-4203-4622-805F-C049BD5DD252/34/9def578f/RequiredAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/94/75144ecf/EthApiService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CreateCheckResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/Check.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B2B81D68-37B9-4BB0-90EA-11CE9C1741BA/c7/cf75b969/AddressUtil.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE51ADA2-4203-4622-805F-C049BD5DD252/b8/8f31eb5a/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CreateCheckRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/34/f6367fb8/EthAccounts.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/46/7806f66b/FunctionCallEncoder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/ICheckService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Session.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToWalletRequestModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B2B81D68-37B9-4BB0-90EA-11CE9C1741BA/35/b0fb8fce/AddressExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/bf/8922884e/CustomAttributeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/QueryCustomerAdressRequestModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/CheckModels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/WalletModels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/d1/a34e45e9/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/ed/8b5c7df9/EventAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BaseModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckAccountResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckAccountRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/WalletService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/a0/1d09efd2/CustomAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/71/8ae32039/ContractTransactionHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/14/7d0bc522/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/c2/243562d8/ContractQueryEthCallHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/317e441d/Event`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/d3/b7f9c590/StaticArrayType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/f7/ee7e7052/ControllerFactoryProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/98/4f2a8c65/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/de/8ba637f2/EventBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/63/1aa44911/IFunctionOutputDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/5a/7a55dab4/StatusCodeResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/d1/c33ba1bc/DynamicArrayType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/14d5ba88/IContractQueryHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/c3/3531b583/ArrayType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4FD8F3C-FEC5-43EB-BD0E-D7F9849AFBBF/a8/80d918fc/RpcRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/d3/d0167a5d/ContractQueryHandlerBase`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/7a/804f6123/QueryDecoderBaseHandler`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4FD8F3C-FEC5-43EB-BD0E-D7F9849AFBBF/8e/b061406a/RpcRequestResponseHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2E8041D-194E-48B1-87BB-3A6D603A9DF8/3d/7a25eb72/EthApiContractService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/1d/a7705885/QueryRawHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckListRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckListResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/b4/6c403455/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/94/75144ecf/EthApiService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/Constants.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/e4/acd2194e/ParameterAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/IContractFacade.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/34/f6367fb8/EthAccounts.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Cache.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/c6/333feca5/QueryToDTOHandler`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Deployment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/b2/904c9371/Parameter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/6a/734f68f2/FunctionMessageEncodingService`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Helpers/OperationResults/TransactionResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/66/21bf85ef/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Entities/AccountDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Entities/ContractDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/19/d36226d1/ABIType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/cf/73a78c36/FunctionBuilderBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C1970516-6C7C-4A60-8E18-2E859C4DE6D2/af/61696091/JObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97299347-DDC8-4F44-82AD-004BD579DFA5/b5/a5b9d328/FunctionCallDecoder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/71/8ae32039/ContractTransactionHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/14/7d0bc522/Thread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/8e/9fba221b/EthApiContractService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2E8041D-194E-48B1-87BB-3A6D603A9DF8/71/65e24d31/Function.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C653E209-6C74-422E-A3AA-45C112417BF2/57/5bf17fe0/Web3.cs" root0="SKIP_HIGHLIGHTING" />
@@ -366,13 +480,48 @@
         <option value="$PROJECT_DIR$/BlockChainBackend/src/AccountsController.cs" />
         <option value="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Entities/AccountDAO.cs" />
         <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/BlockChainBackend.csproj" />
-        <option value="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/Constants.cs" />
-        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.json" />
         <option value="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Cache.cs" />
         <option value="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/IContractFacade.cs" />
-        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/Startup.cs" />
         <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" />
         <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/QueryCustomerAdressViewModel.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToWalletRequestModel.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/QueryCustomerAdressResponseModel.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/QueryCustomerAdressRequestModel.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/AccountModel.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToWalletResponseModel.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/WalletModels.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWalletService.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckCustomerRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckCustomerResponse.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckAccountRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/AddCustomerToCheckAccountResponse.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/IsCustomerHasCheckAccountRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Bank/IsCustomerHasCheckAccountResponse.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Session.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BaseModel.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CreateCheckRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CreateCheckResponse.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWeb3Backend.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/Web3Backend.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Helpers/TimeHelper.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/Check.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoResponse.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CreatedCheckListRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CreatedCheckListResponse.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckListRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/ICheckService.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckListRequest.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/CheckModels.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/WalletService.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/Constants.cs" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.json" />
+        <option value="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" />
       </list>
     </option>
   </component>
@@ -393,7 +542,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -410,22 +558,30 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="BlockChainBackend" type="24d0babc:SolutionExplorerModelNode" />
               <item name="BlockChainBackend" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="contracts" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="BlockChainBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ContractInterface.Common" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="BlockChainBackend" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ContractInterface.Common" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Facade" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="BlockChainBackend" type="24d0babc:SolutionExplorerModelNode" />
               <item name="ContractInterface.ERC20" type="24d0babc:SolutionExplorerModelNode" />
             </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,6 +589,117 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Wallet.json" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Geth1.rtf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/geth2.rtf</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -517,12 +784,28 @@
       <workItem from="1551907977011" duration="5300000" />
       <workItem from="1551943419089" duration="1802000" />
       <workItem from="1551946753233" duration="99000" />
-      <workItem from="1551947087415" duration="3443000" />
+      <workItem from="1551947087415" duration="3927000" />
+      <workItem from="1551967303589" duration="1646000" />
+      <workItem from="1551983627078" duration="438000" />
+      <workItem from="1552029572345" duration="15390000" />
+      <workItem from="1552079369755" duration="3082000" />
+      <workItem from="1552206272143" duration="27243000" />
+      <workItem from="1552254703205" duration="8829000" />
+      <workItem from="1552395823781" duration="702000" />
+      <workItem from="1552464586252" duration="11340000" />
     </task>
+    <task id="LOCAL-00001" summary="son versiyon">
+      <created>1551954135221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551954135222</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34628000" />
+    <option name="totallyTimeSpent" value="103782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -535,15 +818,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="809" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3397711" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923664" visible="true" weight="0.2746781" />
+      <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" weight="0.369814" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.19804741" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" visible="true" weight="0.29149234" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49570817" weight="0.38772663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -553,7 +835,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="TeamCity" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32914925" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50429183" side_tool="true" weight="0.29149234" />
       <window_info anchor="bottom" id="REST Client" order="15" />
       <window_info anchor="bottom" id="Build" order="16" sideWeight="0.49642345" weight="0.32914925" />
@@ -571,6 +853,10 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="son versiyon" />
+    <option name="LAST_COMMIT_MESSAGE" value="son versiyon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -598,94 +884,6 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs</url>
-          <line>30</line>
-          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" initialLine="19" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs</url>
-          <line>120</line>
-          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" initialLine="32" />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs</url>
-          <line>111</line>
-          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" initialLine="38" />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs</url>
-          <line>112</line>
-          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" initialLine="39" />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs</url>
-          <line>86</line>
-          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" initialLine="38" />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs</url>
-          <line>105</line>
-          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/AccountsController.cs" initialLine="41" />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs</url>
-          <line>69</line>
-          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs" initialLine="69">
-            <startOffsets>
-              <option value="2265" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2364" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/d3/d0167a5d/ContractQueryHandlerBase`1.cs</url>
-          <line>18</line>
-          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/d3/d0167a5d/ContractQueryHandlerBase`1.cs" initialLine="18">
-            <startOffsets>
-              <option value="1023" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1125" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/7a/804f6123/QueryDecoderBaseHandler`2.cs</url>
-          <line>41</line>
-          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/7a/804f6123/QueryDecoderBaseHandler`2.cs" initialLine="41">
-            <startOffsets>
-              <option value="1822" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1949" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/1d/a7705885/QueryRawHandler`1.cs</url>
-          <line>28</line>
-          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/1d/a7705885/QueryRawHandler`1.cs" initialLine="28">
-            <startOffsets>
-              <option value="1292" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1337" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Deployment.cs</url>
           <line>125</line>
           <properties documentPath="$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Deployment.cs" initialLine="125">
@@ -698,11 +896,248 @@
           </properties>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs</url>
+          <line>61</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs" initialLine="51">
+            <startOffsets>
+              <option value="2177" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2248" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs</url>
+          <line>123</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" initialLine="118">
+            <startOffsets>
+              <option value="4419" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4479" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs</url>
+          <line>148</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" initialLine="146">
+            <startOffsets>
+              <option value="5514" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5561" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/317e441d/Event`1.cs</url>
+          <line>59</line>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/317e441d/Event`1.cs" initialLine="59">
+            <startOffsets>
+              <option value="2067" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2205" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/317e441d/Event`1.cs</url>
+          <line>51</line>
+          <properties documentPath="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/317e441d/Event`1.cs" initialLine="51">
+            <startOffsets>
+              <option value="1593" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1628" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Helpers/TimeHelper.cs</url>
+          <line>12</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Helpers/TimeHelper.cs" initialLine="12">
+            <startOffsets>
+              <option value="575" />
+            </startOffsets>
+            <endOffsets>
+              <option value="658" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs</url>
+          <line>94</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs" initialLine="94">
+            <startOffsets>
+              <option value="3623" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3662" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs</url>
+          <line>72</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs" initialLine="72">
+            <startOffsets>
+              <option value="2646" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2739" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs</url>
+          <line>96</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs" initialLine="96">
+            <startOffsets>
+              <option value="3763" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3824" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs</url>
+          <line>185</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" initialLine="184">
+            <startOffsets>
+              <option value="7215" />
+            </startOffsets>
+            <endOffsets>
+              <option value="7275" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs</url>
+          <line>208</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" initialLine="208">
+            <startOffsets>
+              <option value="8316" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8632" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs</url>
+          <line>75</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs" initialLine="75">
+            <startOffsets>
+              <option value="2767" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2845" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs</url>
+          <line>104</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs" initialLine="104">
+            <startOffsets>
+              <option value="4068" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4107" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs</url>
+          <line>223</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" initialLine="223">
+            <startOffsets>
+              <option value="8809" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8869" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs</url>
+          <line>236</line>
+          <properties documentPath="$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs" initialLine="236">
+            <startOffsets>
+              <option value="9369" />
+            </startOffsets>
+            <endOffsets>
+              <option value="9460" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>handler.QueryRawAsync(customeradressFunction, _walletcontract.Address);</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>var result = await handler.QueryRawAsync(customeradressFunction, _walletcontract.Address);</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>await @event.EthGetLogs.SendRequestAsync(filterInput, (object) null).ConfigureAwait(false)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Nethereum.Util.AddressUtil.Current</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Nethereum.Util.AddressUtil.Current.IsChecksumAddress(address)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Nethereum.Util.AddressUtil.Current.IsChecksumAddress(address:)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Nethereum.Util.AddressUtil.Current.ConvertToValid20ByteAddress(adress)</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>this.EthCall.SendRequestAsync(this.FunctionMessageEncodingService.CreateCallInput(contractFunctionMessage), block, (object) null);</expression-string>
         <language-id>C#</language-id>
@@ -715,171 +1150,228 @@
         <custom-info>RiderImportsList:</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;networks&quot;)[networkID][&quot;address&quot;]</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;networks&quot;).First.</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;networks&quot;).First.Root</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;networks&quot;).First</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;networks&quot;)</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;networks&quot;).SelectToken(&quot;1337&quot;)</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;networks&quot;).SelectToken(&quot;1337&quot;).SelectToken(&quot;address&quot;).ToString()</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contractOjb.GetValue(&quot;abi&quot;).ToString()</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/obj/Debug/netcoreapp2.2/BlockChainBackend.AssemblyInfo.cs" />
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/obj/Debug/netstandard2.0/ContractInterface.ERC20.AssemblyInfo.cs">
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CreateCheckRequest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+        <state relative-caret-position="60">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/src/Constants.cs" />
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/appsettings.json" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/34/f6367fb8/EthAccounts.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/de/8ba637f2/EventBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="143" column="26" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoRequest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckInfoResponse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckListResponse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/CheckListResponse.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/b4/6c403455/ExecutionContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2055">
+          <caret line="137" column="44" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/WalletModels.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/PostdatedCheckManager.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="15115" column="60" selection-start-line="15115" selection-start-column="18" selection-end-line="15115" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/d3/b7f9c590/StaticArrayType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/d1/c33ba1bc/DynamicArrayType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/c3/3531b583/ArrayType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/19/d36226d1/ABIType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/b2/904c9371/Parameter.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/e4/acd2194e/ParameterAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/14d5ba88/IContractQueryHandler`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/7a/804f6123/QueryDecoderBaseHandler`2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/c2/243562d8/ContractQueryEthCallHandler`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="37" column="76" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/a0/1d09efd2/CustomAttribute.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <caret line="126" column="28" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/Program.cs" />
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/src/AccountsController.cs" />
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/Startup.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C653E209-6C74-422E-A3AA-45C112417BF2/57/5bf17fe0/Web3.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/5a/8036aade/RuntimeType.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+        <state relative-caret-position="150">
+          <caret line="1831" column="6" selection-start-line="1831" selection-start-column="6" selection-end-line="1831" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/63/fa52377d/GenericRpcRequestResponseHandlerNoParam`1.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/d1/a34e45e9/Attribute.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="150">
+          <caret line="331" column="6" selection-start-line="331" selection-start-column="6" selection-end-line="331" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/e9/e88af2e1/PersonalListAccounts.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/bf/8922884e/CustomAttributeExtensions.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="77" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="77" />
+        <state relative-caret-position="304">
+          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Entities/AccountDAO.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/06/3b8958bf/Task`1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="250" column="6" selection-start-line="250" selection-start-column="6" selection-end-line="250" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Constants.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Contract_Init.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/94/75144ecf/EthApiService.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/d3/d0167a5d/ContractQueryHandlerBase`1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/f7/ee7e7052/ControllerFactoryProvider.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/BlockChainBackend.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2E8041D-194E-48B1-87BB-3A6D603A9DF8/3d/7a25eb72/EthApiContractService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="270">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/14/7d0bc522/Thread.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
+        <state relative-caret-position="154">
           <caret line="111" column="8" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/Program.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/c3/14eb1152/FunctionBuilder`1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="150">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Cache.cs">
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/Check.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C1970516-6C7C-4A60-8E18-2E859C4DE6D2/af/61696091/JObject.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/46/7806f66b/FunctionCallEncoder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6495">
-          <caret line="433" column="18" selection-start-line="433" selection-start-column="18" selection-end-line="433" selection-end-column="18" />
+        <state relative-caret-position="285">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/c6/333feca5/QueryToDTOHandler`2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/Customer/CheckListRequest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <marker date="1552482765447" expanded="true" signature="141:154" ph="{...}" />
+            <marker date="1552482765447" expanded="true" signature="230:243" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWalletService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <marker date="1552482765449" expanded="true" signature="67:244" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="105:242" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4FD8F3C-FEC5-43EB-BD0E-D7F9849AFBBF/a8/80d918fc/RpcRequest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -890,283 +1382,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D506C52-CF4B-4BDB-B896-80B6E2C92982/3b/7cedadd8/NumberToBytesConverter`1.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F4FD8F3C-FEC5-43EB-BD0E-D7F9849AFBBF/8e/b061406a/RpcRequestResponseHandler`1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/PostdatedCheckManager.json">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA9ECF92-D741-4F62-B734-48664684F4EC/14/80a2be29/PersonalNewAccount.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224310">
-          <caret line="14954" column="16" selection-start-line="14954" selection-start-column="16" selection-end-line="14954" selection-end-column="16" />
+        <state relative-caret-position="285">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Constants.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="30" column="103" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="103" />
+          <folding>
+            <marker date="1551766240818" expanded="true" signature="57:2297" ph="{...}" />
+            <marker date="1551766240818" expanded="true" signature="93:2295" ph="{...}" />
+            <marker date="1551766240818" expanded="false" signature="160:1418" ph="Function names" />
+            <marker date="1551766240818" expanded="true" signature="1428:1842" ph="Defautl values for contracts" />
+            <marker date="1551766240818" expanded="false" signature="1852:2110" ph="Directories" />
+            <marker date="1551766240818" expanded="true" signature="2124:2289" ph="Cache" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Wallet.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36135">
+          <caret line="2425" column="19" selection-start-line="2425" selection-start-column="19" selection-end-line="2425" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/IWeb3Backend.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <marker date="1552482765450" expanded="false" signature="6:60" ph="..." />
+            <marker date="1552482765450" expanded="true" signature="98:325" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="134:323" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/Web3Backend.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="27" column="76" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="76" />
+          <folding>
+            <marker date="1552482765450" expanded="false" signature="6:170" ph="..." />
+            <marker date="1552482765450" expanded="true" signature="208:1198" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="254:1196" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="445:532" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="595:709" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="760:900" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="938:1033" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="1086:1190" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/Constants.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="105" selection-start-line="10" selection-start-column="105" selection-end-line="10" selection-end-column="105" />
+          <folding>
+            <marker date="1552482765400" expanded="true" signature="58:1057" ph="{...}" />
+            <marker date="1552482765400" expanded="true" signature="94:1055" ph="{...}" />
+            <marker date="1552482765400" expanded="true" signature="161:602" ph="Defautl values for contracts" />
+            <marker date="1552482765400" expanded="false" signature="612:870" ph="Directories" />
+            <marker date="1552482765400" expanded="false" signature="884:1049" ph="Cache" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/appsettings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/8e/9fba221b/EthApiContractService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="99" selection-start-line="75" selection-start-column="73" selection-end-line="75" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/71/8ae32039/ContractTransactionHandler`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/TransactionPermissionManager.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63735">
-          <caret line="4249" column="22" selection-start-line="4249" selection-start-column="22" selection-end-line="4249" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/Constants.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <marker date="1551854919366" expanded="true" signature="94:1017" ph="{...}" />
-            <marker date="1551854919366" expanded="true" signature="161:564" ph="Defautl values for contracts" />
-            <marker date="1551854919366" expanded="false" signature="574:832" ph="Directories" />
-            <marker date="1551854919366" expanded="false" signature="846:1011" ph="Cache" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/IContractFacade.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <marker date="1551860608089" expanded="false" signature="6:181" ph="..." />
-            <marker date="1551860608089" expanded="true" signature="256:725" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Entities/ContractDAO.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-          <folding>
-            <marker date="1551766240639" expanded="false" signature="6:148" ph="..." />
-            <marker date="1551766240639" expanded="true" signature="236:2373" ph="{...}" />
-            <marker date="1551766240639" expanded="true" signature="251:353" ph="/// Merkle root of blockchain ... " />
-            <marker date="1551766240639" expanded="true" signature="422:519" ph="/// Bytecode of contract ... " />
-            <marker date="1551766240639" expanded="true" signature="602:691" ph="/// Contract Abi ... " />
-            <marker date="1551766240639" expanded="true" signature="738:829" ph="/// Contract owner ... " />
-            <marker date="1551766240639" expanded="true" signature="884:974" ph="/// Stake holders ... " />
-            <marker date="1551766240639" expanded="true" signature="1037:1163" ph="/// Mapping of representatives with withdrawal right. ... " />
-            <marker date="1551766240639" expanded="true" signature="1231:1333" ph="/// Price to mine deployment. ... " />
-            <marker date="1551766240639" expanded="true" signature="1385:1491" ph="/// Contract name must be unique. ... " />
-            <marker date="1551766240639" expanded="true" signature="1539:1652" ph="/// Underlying Nethereum smart contract. ... " />
-            <marker date="1551766240639" expanded="true" signature="1706:1818" ph="/// Total token supply of this contract ... " />
-            <marker date="1551766240639" expanded="true" signature="1877:1991" ph="/// True if contract is no longer in use. ... " />
-            <marker date="1551766240639" expanded="true" signature="2040:2128" ph="/// Time in UTC ... " />
-            <marker date="1551766240639" expanded="false" signature="2190:2367" ph="Constructors" />
-            <marker date="1551766240639" expanded="true" signature="2288:2348" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/SafeMath.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/contracts/Wallet.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="2432" column="60" selection-start-line="2432" selection-start-column="18" selection-end-line="2432" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA784659-0D02-4E2E-BA96-9074DE6CA15D/63/1aa44911/IFunctionOutputDTO.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/14d5ba88/IContractQueryHandler`1.cs">
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/WalletService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <marker date="1552482765450" expanded="true" signature="6:612" ph="..." />
+            <marker date="1552482765450" expanded="true" signature="650:4063" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="700:4061" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="1150:1313" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="1383:2288" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="1772:1876" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="2369:4055" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="2731:2971" ph="/* var ecKey = Nethereum.Signer.EthECKey.GenerateKey(); ... */" />
+            <marker date="1552482765450" expanded="true" signature="3060:3305" ph="{...}" />
+            <marker date="1552482765450" expanded="true" signature="3616:3990" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/BankController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+          <folding>
+            <marker date="1552482765442" expanded="false" signature="6:756" ph="..." />
+            <marker date="1552482765442" expanded="true" signature="792:3897" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="904:3895" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="1277:1450" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="1572:2023" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="1738:1889" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2154:3216" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2354:2753" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2444:2611" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2930:3081" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="3345:3536" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="3673:3889" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/81/317e441d/Event`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B6775149-F218-4603-A63E-F2F651D9E73B/66/21bf85ef/String.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/ICheckService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <marker date="1552482765449" expanded="false" signature="6:163" ph="..." />
+            <marker date="1552482765449" expanded="true" signature="201:789" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="238:787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Models/BlockChainModels/CheckModels.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/7a/804f6123/QueryDecoderBaseHandler`2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/c6/333feca5/QueryToDTOHandler`2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/6a/734f68f2/FunctionMessageEncodingService`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="81" column="34" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/cf/73a78c36/FunctionBuilderBase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97299347-DDC8-4F44-82AD-004BD579DFA5/b5/a5b9d328/FunctionCallDecoder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="85" column="40" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D2E8041D-194E-48B1-87BB-3A6D603A9DF8/71/65e24d31/Function.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Helpers/OperationResults/TransactionResult.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+          <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
           <folding>
-            <marker date="1551766240622" expanded="false" signature="6:132" ph="..." />
-            <marker date="1551766240622" expanded="true" signature="176:1381" ph="{...}" />
-            <marker date="1551766240622" expanded="true" signature="213:1379" ph="{...}" />
-            <marker date="1551766240622" expanded="true" signature="715:736" ph="{...}" />
-            <marker date="1551766240622" expanded="true" signature="797:1373" ph="{...}" />
+            <marker date="1552482765445" expanded="false" signature="6:146" ph="..." />
+            <marker date="1552482765445" expanded="true" signature="195:3582" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="226:3580" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="241:340" ph="/// Müşteriyi Check contcrat'a eklemek için kullanılır ... " />
+            <marker date="1552482765445" expanded="true" signature="438:544" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="554:657" ph="/// Müşteriyi check müşterisi mi bilgisinin input requesti ... " />
+            <marker date="1552482765445" expanded="true" signature="761:867" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="877:980" ph="/// Müşteriyi check müşterisi mi bilgisinin input requesti ... " />
+            <marker date="1552482765445" expanded="true" signature="1069:1167" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="1177:1246" ph="/// Create Check Request ... " />
+            <marker date="1552482765445" expanded="true" signature="1344:1602" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="1684:1906" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="1916:1982" ph="/// CheckInfo Request ... " />
+            <marker date="1552482765445" expanded="true" signature="2076:2179" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="2189:2254" ph="/// CheckInfo Output ... " />
+            <marker date="1552482765445" expanded="true" signature="2342:2707" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="2725:2791" ph="/// CheckInfo Request ... " />
+            <marker date="1552482765445" expanded="true" signature="2894:2997" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="3015:3081" ph="/// CheckInfo Request ... " />
+            <marker date="1552482765445" expanded="true" signature="3189:3295" ph="{...}" />
+            <marker date="1552482765445" expanded="true" signature="3305:3370" ph="/// CheckInfo Output ... " />
+            <marker date="1552482765445" expanded="true" signature="3458:3574" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.Common/Facade/ContractFacade_Deployment.cs">
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Controllers/CustomerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="119" column="57" selection-start-line="119" selection-start-column="57" selection-end-line="119" selection-end-column="57" />
+        <state relative-caret-position="251">
+          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
           <folding>
-            <marker date="1551766240602" expanded="false" signature="6:718" ph="..." />
-            <marker date="1551766240602" expanded="true" signature="754:7420" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="813:7418" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="830:1346" ph="/// Deploy smart contract, other than contract's abi, bytecode, sender address, ... " />
-            <marker date="1551766240602" expanded="true" signature="1578:4201" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="1604:1852" ph="/* var isNameUnique = CheckUniqueContractName(name); ... */" />
-            <marker date="1551766240602" expanded="true" signature="2105:2318" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="2350:2551" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="2705:2803" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="2835:2944" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="3093:3386" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="3817:4190" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="4297:5117" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="4451:5041" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="4485:4745" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="4784:5027" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="4849:5009" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="5199:6556" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="5267:6370" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="5449:5597" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="6403:6533" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="6614:7100" ph="{...}" />
-            <marker date="1551766240602" expanded="true" signature="7141:7403" ph="{...}" />
+            <marker date="1552482765442" expanded="false" signature="6:293" ph="..." />
+            <marker date="1552482765442" expanded="true" signature="329:4380" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="445:4378" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="831:1004" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="1105:1578" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="1694:2592" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="1910:2525" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2178:2510" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2240:2492" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2689:3490" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="2905:3423" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="3076:3408" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="3138:3390" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="3600:3929" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="4045:4372" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/1d/a7705885/QueryRawHandler`1.cs">
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Services/CheckService.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8385C9F5-DC13-4A22-8BDA-DC02070323E7/d3/d0167a5d/ContractQueryHandlerBase`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/BankController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="30" />
+        <state relative-caret-position="257">
+          <caret line="236" column="12" selection-start-line="236" selection-start-column="12" selection-end-line="236" selection-end-column="12" />
           <folding>
-            <marker date="1551950360815" expanded="false" signature="6:562" ph="..." />
-            <marker date="1551950360815" expanded="true" signature="598:5428" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="710:5426" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="1055:1296" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="1460:1680" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="1805:1927" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="2028:2140" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="2242:2853" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="2474:2607" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="2936:4490" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="3182:3702" ph="/* AddToWalletFunction func = new AddToWalletFunction() ... */" />
-            <marker date="1551950360815" expanded="true" signature="4566:5094" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="4757:5051" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="5146:5286" ph="{...}" />
-            <marker date="1551950360815" expanded="true" signature="5325:5420" ph="{...}" />
+            <marker date="1552482765449" expanded="false" signature="6:688" ph="..." />
+            <marker date="1552482765449" expanded="true" signature="726:10299" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="774:10297" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="1298:1505" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="1574:3063" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="1686:1743" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="2056:2171" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="2493:2590" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="2875:2955" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="2972:3053" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="3132:4280" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="3454:3512" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="3832:3929" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="4396:5394" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="4862:5046" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="5491:6154" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="6259:7107" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="6721:6813" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="7192:8704" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="7668:7765" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="8156:8664" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="8277:8650" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="8361:8630" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="8786:10291" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="9258:9354" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="9744:10252" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="9865:10238" ph="{...}" />
+            <marker date="1552482765449" expanded="true" signature="9949:10218" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/IContractOperation.cs">
+    <entry file="file://$PROJECT_DIR$/BlockChainBackend/WebApi/src/Helpers/TimeHelper.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
-            <marker date="1551766240833" expanded="false" signature="6:184" ph="..." />
-            <marker date="1551766240833" expanded="true" signature="219:1654" ph="{...}" />
-            <marker date="1551766240833" expanded="true" signature="261:1652" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlockChainBackend/ContractInterface.ERC20/Contract_Transaction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="93" column="63" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="63" />
-          <folding>
-            <marker date="1551766240838" expanded="true" signature="6:320" ph="..." />
-            <marker date="1551766240838" expanded="true" signature="355:4514" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="420:4512" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="436:2143" ph="Write" />
-            <marker date="1551766240838" expanded="true" signature="692:869" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="1013:1170" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="1292:1479" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="1607:1798" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="1929:2123" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="2154:3847" ph="Read" />
-            <marker date="1551766240838" expanded="true" signature="2285:2488" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="2567:2744" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="2833:3021" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="3109:3296" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="3407:3610" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="3673:3827" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="4002:4505" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="4121:4309" ph="{...}" />
-            <marker date="1551766240838" expanded="true" signature="4375:4426" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="50:849" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="87:847" ph="{...}" />
+            <marker date="1552482765442" expanded="true" signature="552:841" ph="{...}" />
           </folding>
         </state>
       </provider>
